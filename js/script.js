@@ -69,8 +69,5 @@ function randomArray(){
   for (var i = 0; i < 10000; i++) {
     shuffle(arr);
   }
-
-
-
   return arr;
 }
