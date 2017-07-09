@@ -33,13 +33,13 @@ function caucusRace(value){
 
   if(score > 0){
     $(document.body).addClass("bg-success").hide().fadeIn(300);
-    $('<div></div>').html('<div class="row col-xs-9 col-xs-offset-2"><h1 id="win">W I N</h1></div><div class="row col-xs-5 col-xs-offset-4"><h3>Winners: '+ winStarts +'</h3></div><div class="row col-xs-4 col-xs-offset-5"><a href="index.html"><h3>Start new game ?</h3></a></div>').appendTo(".result").hide().fadeIn(500);
+    $('<div></div>').html('<div class="row col-xs-10 col-xs-offset-1"><h1 id="win">W I N</h1></div><div class="row col-xs-5 col-xs-offset-4"><h3>Winners: '+ winStarts +'</h3></div><div class="row col-xs-4 col-xs-offset-5"><a href="index.html"><h3>Start new game ?</h3></a></div>').appendTo(".result").hide().fadeIn(500);
 
 
   }else {
     $(document.body).addClass("bg-danger").hide().fadeIn(300);
     $("#title").addClass("gameover");
-    $('<div class="row"></div>').html('<div class="col-xs-9 col-xs-offset-3"><h1 class="gameover" id="gover">GAME OVER</h1></div><div class="row col-xs-5 col-xs-offset-4"><h3 class="gameover">Winners: '+ winStarts +'</h3></div><div class="row col-xs-4 col-xs-offset-5"><a href="index.html"><h3 class="gameover">Start new game ?</h3></a></div>').appendTo(".result").hide().fadeIn(500);
+    $('<div class="row"></div>').html('<div class="col-xs-7 col-xs-offset-3"><h1 class="gameover" id="gover">GAME OVER</h1></div><div class="row col-xs-5 col-xs-offset-4"><h3 class="gameover">Winners: '+ winStarts +'</h3></div><div class="row col-xs-4 col-xs-offset-5"><a href="index.html"><h3 class="gameover">Start new game ?</h3></a></div>').appendTo(".result").hide().fadeIn(500);
   }
   console.log(array);
 }
